@@ -7,11 +7,12 @@ import PlayerImg from "../PlayerImg";
 
 const PlayerCard = () => {
   return (
-    <>
+    <section className={styles.PlayerCard}>
       <PlayerImg />
+      <PlayerName />
       <PlayerPosition />
       <PlayerStats />
-    </>
+    </section>
   );
 };
 

@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Pitch.module.scss";
+// import pitch from "../../data/rugby.png";
 
-const Pitch = () => {
+const Pitch = props => {
+  const { image } = props;
   return (
     <>
-      <p>Pitch works</p>
+      <img src={image} alt="" />
     </>
   );
 };
