@@ -1,22 +1,15 @@
 import React from "react";
 import styles from "./PlayerStats.module.scss";
-import data from "../PlayerStats";
 
 const PlayerStats = props => {
-  const {
-    attackScore,
-    defenseScore,
-    strengthScore,
-    speedScore,
-    experienceScore
-  } = props;
+  const { attacking, defending, strength, speed, experience } = props;
   return (
     <>
-      <p>Attack: {attackScore}</p>
-      <p>Defense: {defenseScore}</p>
-      <p>Strength: {strengthScore}</p>
-      <p>Speed: {speedScore}</p>
-      <p>Experience: {experienceScore}</p>
+      <p>Attack: {attacking}</p>
+      <p>Defense: {defending}</p>
+      <p>Strength: {strength}</p>
+      <p>Speed: {speed}</p>
+      <p>Experience: {experience}</p>
     </>
   );
 };

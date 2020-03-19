@@ -1,0 +1,16 @@
+.PlayerCardFront {
+  margin: 20px;
+  width: 150px;
+  height: 250px;
+  border: solid gray 3px;
+  // background-color: rgb(18, 18, 84);
+  background-color: wheat;
+  text-align: center;
+  img {
+    height: 45%;
+    width: 80%;
+    margin: 5% 0 0 10%;
+    border-radius: 25%;
+    border: solid gray 2px;
+  }
+}

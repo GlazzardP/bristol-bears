@@ -13,7 +13,7 @@ const players = [
   {
     playerName: "John Afoa",
     playerImg:
-      "https://bristolsport.azureedge.net/media/40591/harry-thacker.jpg?w=540&h=540&mode=crop",
+      "https://bristolsport.azureedge.net/media/40601/john-afoa.jpg?w=540&h=540&mode=crop",
     position: "Prop",
     attacking: "70",
     defending: "80",
@@ -25,7 +25,7 @@ const players = [
     playerName: "Joe Joyce",
     playerImg:
       "https://bristolsport.azureedge.net/media/40591/harry-thacker.jpg?w=540&h=540&mode=crop",
-    position: "Second Row",
+    position: "Lock",
     attacking: "70",
     defending: "80",
     strength: "85",
@@ -58,7 +58,7 @@ const players = [
     playerName: "Chris Vui",
     playerImg:
       "https://bristolsport.azureedge.net/media/40591/harry-thacker.jpg?w=540&h=540&mode=crop",
-    position: "second Row",
+    position: "Lock",
     attacking: "70",
     defending: "80",
     strength: "85",
@@ -68,8 +68,8 @@ const players = [
   {
     playerName: "Dave Attwood",
     playerImg:
-      "https://bristolsport.azureedge.net/media/40591/harry-thacker.jpg?w=540&h=540&mode=crop",
-    position: "Second Row",
+      "https://bristolsport.azureedge.net/media/40586/dave-attwood.jpg?w=540&h=540&mode=crop",
+    position: "Lock",
     attacking: "70",
     defending: "80",
     strength: "85",

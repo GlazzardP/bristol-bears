@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CardList.module.scss";
-import PlayerCard from "../PlayerCard/";
+import PlayerCardFront from "../PlayerCardFront/";
 import players from "../../data/data";
 
 const CardList = () => {
@@ -9,7 +9,7 @@ const CardList = () => {
       {players.map(player => {
         return (
           <div>
-            <PlayerCard playerObj={player}></PlayerCard>
+            <PlayerCardFront playerObj={player}></PlayerCardFront>
           </div>
         );
       })}
