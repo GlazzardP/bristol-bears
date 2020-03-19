@@ -110,3 +110,5 @@ const players = [
     experience: "80"
   }
 ];
+
+export default players;

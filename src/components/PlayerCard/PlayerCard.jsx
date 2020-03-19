@@ -5,7 +5,11 @@ import PlayerStats from "../PlayerStats";
 import PlayerPosition from "../PlayerPosition";
 import PlayerImg from "../PlayerImg";
 
-const PlayerCard = () => {
+const PlayerCard = props => {
+  const { playersArray } = props;
+  console.log(playersArray);
+  //just to chec
+
   return (
     <section className={styles.PlayerCard}>
       <PlayerImg />

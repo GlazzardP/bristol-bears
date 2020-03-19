@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./PlayerStats.module.scss";
+import data from "../PlayerStats";
 
 const PlayerStats = props => {
   const {
