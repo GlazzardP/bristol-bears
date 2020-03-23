@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./CardList.module.scss";
-import PlayerCardFront from "../PlayerCardFront/";
-import PlayerCardBack from "../PlayerCardBack";
+import styles from "./Squad.module.scss";
+import PlayerCardFront from "../../components/PlayerCardFront";
+import PlayerCardBack from "../../components/PlayerCardBack";
 import players from "../../data/data";
 
-const CardList = () => {
+const Squad = () => {
   return (
     <section>
       {players.map(player => {
@@ -19,4 +19,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export default Squad;

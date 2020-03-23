@@ -3,16 +3,18 @@ import styles from "./App.module.scss";
 import CardList from "./components/CardList";
 import players from "./data/data.js";
 import NavBar from "./containers/NavBar";
+import Pitch from "./containers/Pitch";
+import Squad from "./containers/Squad/Squad";
 
 function App() {
   return (
     <>
-      <section>
-        <NavBar />
-      </section>
-      <div className={styles.CardList}>
+      <NavBar />
+      <Pitch />
+      {/* <div className={styles.CardList}>
         <CardList />
-      </div>
+      </div> */}
+      <Squad />
     </>
   );
 }

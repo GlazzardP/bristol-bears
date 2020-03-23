@@ -15,9 +15,9 @@ const players = [
     playerImg:
       "https://bristolsport.azureedge.net/media/40601/john-afoa.jpg?w=540&h=540&mode=crop",
     position: "Prop",
-    attacking: "70",
-    defending: "80",
-    strength: "85",
+    attacking: "50",
+    defending: "50",
+    strength: "5",
     speed: "77",
     experience: "80"
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./PlayerPosition.module.scss";
+// import styles from "./PlayerPosition.module.scss";
 
 const PlayerPosition = props => {
   const { position } = props;
