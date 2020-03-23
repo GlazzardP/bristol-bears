@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./App.module.scss";
-import CardList from "./components/CardList";
-import players from "./data/data.js";
+// import styles from "./App.module.scss";
+// import CardList from "./components/CardList";
 import NavBar from "./containers/NavBar";
 import Pitch from "./containers/Pitch";
 import Squad from "./containers/Squad/Squad";
