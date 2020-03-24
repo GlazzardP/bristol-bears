@@ -2,25 +2,19 @@ import React, { useState } from "react";
 import styles from "./Pitch.module.scss";
 
 const Pitch = () => {
-  const [currentTeam, addPlayerToTeam] = useState([
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15
-  ]);
+  const [currentTeam, addPlayerToTeam] = useState([]);
+
+  const updateTeam = playerObj => {
+    const newTeam = [...currentTeam, playerObj];
+    addPlayerToTeam(newTeam);
+  };
+
   return (
     <section className={styles.Pitch}>
+      {currentTeam.map(playerObj => (
+        <p>{playerObj.playerName}</p>
+      ))}
+      {/* <p add={addPlayerToTeam}></p> */}
       {/* <div className={styles.FrontRow}>
         <p>1</p>
         <p>2</p>
