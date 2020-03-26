@@ -6,7 +6,7 @@ import PlayerImg from "../PlayerImg";
 
 const PlayerCardFront = props => {
   const [notSelected, toggleSelectionToTeam] = useState();
-  const { playerObj } = props;
+  const { playerObj, updateTeam } = props;
   console.log(playerObj);
 
   // const addToTeam = () => {
@@ -24,7 +24,7 @@ const PlayerCardFront = props => {
         <PlayerPosition position={playerObj.position} />
       </section>
       <div>
-        <button>Select</button>
+        <button onClick={() => updateTeam(playerObj)}>Select</button>
       </div>
     </>
   );

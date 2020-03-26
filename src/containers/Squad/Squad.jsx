@@ -4,13 +4,17 @@ import PlayerCardFront from "../../components/PlayerCardFront";
 import PlayerCardBack from "../../components/PlayerCardBack";
 import players from "../../data/data";
 
-const Squad = () => {
+const Squad = props => {
+  const { updateTeam } = props;
   return (
     <section>
       {players.map(player => {
         return (
           <div className={styles.FrontAndBack}>
-            <PlayerCardFront playerObj={player}></PlayerCardFront>
+            <PlayerCardFront
+              playerObj={player}
+              updateTeam={updateTeam}
+            ></PlayerCardFront>
             <PlayerCardBack playerObj={player}></PlayerCardBack>
           </div>
         );

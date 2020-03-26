@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Pitch.module.scss";
 
-const Pitch = () => {
-  const [currentTeam, addPlayerToTeam] = useState([]);
-
-  const updateTeam = playerObj => {
-    const newTeam = [...currentTeam, playerObj];
-    addPlayerToTeam(newTeam);
-  };
+const Pitch = props => {
+  const { currentTeam } = props;
 
   return (
     <section className={styles.Pitch}>
