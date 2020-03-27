@@ -9,17 +9,19 @@ function App() {
   const [currentTeam, addPlayerToTeam] = useState([]);
 
   const updateTeam = playerObj => {
-    const newTeam = [...currentTeam, playerObj];
-    addPlayerToTeam(newTeam);
+    const teamAlreadySelected = [...currentTeam];
+    if (teamAlreadySelected.includes(playerObj.playerName)) {
+      alert("already selected");
+    } else {
+      const newTeam = [...currentTeam, playerObj];
+      addPlayerToTeam(newTeam);
+    }
   };
 
   return (
     <>
       <NavBar />
       <Pitch currentTeam={currentTeam} />
-      {/* <div className={styles.CardList}>
-        <CardList />
-      </div> */}
       <Squad updateTeam={updateTeam} />
     </>
   );
