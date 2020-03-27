@@ -10,12 +10,11 @@ function App() {
 
   const updateTeam = playerObj => {
     const teamAlreadySelected = [...currentTeam];
-    if (teamAlreadySelected.includes(playerObj.playerName)) {
-      alert("already selected");
-    } else {
-      const newTeam = [...currentTeam, playerObj];
-      addPlayerToTeam(newTeam);
-    }
+    // if (teamAlreadySelected.includes(playerObj.playerName)) {
+    //   alert("already selected");
+    // } else {
+    const newTeam = [...currentTeam, playerObj];
+    addPlayerToTeam(newTeam);
   };
 
   return (
