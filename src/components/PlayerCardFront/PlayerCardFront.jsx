@@ -7,7 +7,7 @@ import PlayerImg from "../PlayerImg";
 const PlayerCardFront = props => {
   const [notSelected, toggleSelectionToTeam] = useState();
   const { playerObj, updateTeam } = props;
-  console.log(playerObj);
+  // console.log(playerObj);
 
   // const addToTeam = () => {
   //   if (position={playerObj.position} === "Prop") {

@@ -7,8 +7,17 @@ const Pitch = props => {
 
   return (
     <section className={styles.Pitch}>
-      {currentTeam.map(playerObj => (
-        <p>{playerObj.playerName}</p>
+      {currentTeam.slice(0, 3).map(playerObj => (
+        <div className={styles.ShirtPlayer}>
+          <p>{playerObj.playerName}</p>
+          <p>{playerObj.PlayerPosition}</p>
+        </div>
+      ))}
+      {currentTeam.slice(3, 6).map(playerObj => (
+        <div className={styles.ShirtPlayer}>
+          <p>{playerObj.playerName}</p>
+          <p>{playerObj.PlayerPosition}</p>
+        </div>
       ))}
       {/* <p add={addPlayerToTeam}></p> */}
       {/* <div className={styles.FrontRow}>

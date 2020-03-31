@@ -4,42 +4,50 @@
   background-color: rgb(26, 163, 26);
   border: solid black 2px;
 
-  p {
-    height: 60px;
-    width: 60px;
-    border: solid black 2px;
-    background-image: linear-gradient(blue, red);
-    margin: 10px;
-  }
+  display: flex;
+  flex-direction: row;
 
-  .FrontRow {
-    display: flex;
+  .ShirtPlayer {
+    border: solid red 2px;
+    height: 55px;
+    width: 55px;
   }
-  .SecondRow {
-    display: flex;
-    margin-left: 40px;
-  }
+  // p {
+  //   height: 60px;
+  //   width: 60px;
+  //   border: solid black 2px;
+  //   background-image: linear-gradient(blue, red);
+  //   margin: 10px;
+  // }
 
-  .BackRow {
-    display: flex;
-  }
+  // .FrontRow {
+  //   display: flex;
+  // }
+  // .SecondRow {
+  //   display: flex;
+  //   margin-left: 40px;
+  // }
 
-  .HalfBacks {
-    display: flex;
-    margin-left: 50px;
-  }
+  // .BackRow {
+  //   display: flex;
+  // }
 
-  .Centers {
-    display: flex;
-    margin-left: 150px;
-  }
+  // .HalfBacks {
+  //   display: flex;
+  //   margin-left: 50px;
+  // }
 
-  .Wings {
-    display: flex;
-    justify-content: space-between;
-  }
+  // .Centers {
+  //   display: flex;
+  //   margin-left: 150px;
+  // }
 
-  .FullBack {
-    margin-left: 50%;
-  }
+  // .Wings {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+
+  // .FullBack {
+  //   margin-left: 50%;
+  // }
 }

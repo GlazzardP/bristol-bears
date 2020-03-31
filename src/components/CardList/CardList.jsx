@@ -3,8 +3,13 @@ import styles from "./CardList.module.scss";
 import PlayerCardFront from "../PlayerCardFront/";
 import PlayerCardBack from "../PlayerCardBack";
 import players from "../../data/data";
+import Pitch from "../../containers/Pitch";
 
 const CardList = () => {
+  const result = players.filter(player =>
+    players.includes(playerObj.playerName)
+  );
+
   return (
     <section>
       {players.map(player => {
