@@ -1,6 +1,6 @@
 .Pitch {
   height: 60vh;
-  width: 40vw;
+  width: 70vw;
   background-color: rgb(26, 163, 26);
   border: solid black 2px;
 
@@ -11,43 +11,6 @@
     border: solid red 2px;
     height: 55px;
     width: 55px;
+    margin: 5px;
   }
-  // p {
-  //   height: 60px;
-  //   width: 60px;
-  //   border: solid black 2px;
-  //   background-image: linear-gradient(blue, red);
-  //   margin: 10px;
-  // }
-
-  // .FrontRow {
-  //   display: flex;
-  // }
-  // .SecondRow {
-  //   display: flex;
-  //   margin-left: 40px;
-  // }
-
-  // .BackRow {
-  //   display: flex;
-  // }
-
-  // .HalfBacks {
-  //   display: flex;
-  //   margin-left: 50px;
-  // }
-
-  // .Centers {
-  //   display: flex;
-  //   margin-left: 150px;
-  // }
-
-  // .Wings {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-
-  // .FullBack {
-  //   margin-left: 50%;
-  // }
 }

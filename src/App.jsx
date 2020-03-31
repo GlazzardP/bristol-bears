@@ -24,14 +24,10 @@ function App() {
     {}
   ]);
 
-  // let player = playerObj.playerName;
-
   const updateTeam = playerObj => {
     const teamAlreadySelected = [...currentTeam];
-    // if (teamAlreadySelected.includes(player)) {
-    //   alert("already selected");
-    console.log(currentTeam);
-    // } else {]
+
+    // console.log(currentTeam);
     teamAlreadySelected[playerObj.positionNum - 1] = playerObj;
 
     // const newTeam = [...currentTeam, playerObj];

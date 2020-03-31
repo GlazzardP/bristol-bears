@@ -10,7 +10,7 @@ const Squad = props => {
   const filteredPlayers = players.filter(
     player => !selectedPlayers.includes(player.playerName)
   );
-  console.log(filteredPlayers);
+  // console.log(filteredPlayers);
 
   return (
     <section>
