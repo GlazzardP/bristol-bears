@@ -286,7 +286,115 @@ const players = [
     strength: "85",
     speed: "77",
     experience: "80"
-  }
+  },
+  {
+    playerName: "Jake Armstrong",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/40595/jake-armstrong.jpg?w=540&h=540&mode=crop",
+    position: "Prop",
+    positionNum: 1,
+    attacking: "40",
+    defending: "70",
+    strength: "85",
+    speed: "55",
+    experience: "60"
+  },
+  {
+    playerName: "Joe Batley",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/40599/joe-batley.jpg?w=540&h=540&mode=crop",
+    position: "Lock",
+    positionNum: 5,
+    attacking: "55",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
+  {
+    playerName: "Sam Bedlow",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/41019/thumbnail_sam-bedlow.jpg?w=540&h=540&mode=crop",
+    position: "Centre",
+    positionNum: 12,
+    attacking: "70",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
+  {
+    playerName: "Ryan Edwards",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/40614/ryan-edwards.jpg?w=540&h=540&mode=crop",
+    position: "Wing",
+    positionNum: 11,
+    attacking: "70",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
+  {
+    playerName: "Ed Holmes",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/40587/ed-holmes.jpg?w=540&h=540&mode=crop",
+    position: "Lock",
+    positionNum: 4,
+    attacking: "70",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
+  {
+    playerName: "Jordan Lay",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/42756/jordan-lay.jpg?w=540&h=540&mode=crop",
+    position: "Prop",
+    positionNum: 3,
+    attacking: "70",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
+  {
+    playerName: "Jake Armstrong",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/40597/jake-woolmore.jpg?w=540&h=540&mode=crop",
+    position: "Centre/Wing",
+    positionNum: 13,
+    attacking: "70",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
+  {
+    playerName: "Will Hurrell",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/40669/will-hurrell.jpg?w=540&h=540&mode=crop",
+    position: "Centre",
+    positionNum: 12,
+    attacking: "70",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
+  {
+    playerName: "Jake Heenan",
+    playerImg:
+      "https://bristolsport.azureedge.net/media/40596/jake-heenan.jpg?w=540&h=540&mode=crop",
+    position: "Flanker",
+    positionNum: 7,
+    attacking: "70",
+    defending: "80",
+    strength: "85",
+    speed: "77",
+    experience: "80"
+  },
 ];
 
 export default players;
