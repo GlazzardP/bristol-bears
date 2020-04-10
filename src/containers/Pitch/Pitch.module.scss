@@ -1,16 +1,98 @@
 .Pitch {
-  height: 60vh;
-  width: 70vw;
-  background-color: rgb(26, 163, 26);
-  border: solid black 2px;
-
+  background-image: url("../../data/rugby-union-pitch.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80vw;
+  border:  solid black 1px;
+  background-color: green;
+  position: fixed;
   display: flex;
   flex-direction: row;
 
   .ShirtPlayer {
-    border: solid red 2px;
-    height: 55px;
-    width: 55px;
+    // border: solid red 2px;
+    height: 75px;
+    width: 75px;
     margin: 5px;
+    text-align: center;
   }
+
+  .players { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Forwards { 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: fit-content;
+      margin-left: 100px;
+
+      .frontRow  { 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: min-content;
+        margin-left: 50px;
+      }
+    
+      .secondRow  { 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: min-content;
+      }
+    
+      .backRow  { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: min-content;    
+        margin-left: 100px;
+      }
+
+
+    }
+    .scrumHalf { 
+      margin-left: 200px;
+  
+      margin-top: 20px;
+      // border: solid black 12px;
+      // background-color: blueviolet;
+    }
+  
+    .flyHalf { 
+      margin-left: 400px;
+  
+    }
+  
+    .Centres { 
+      display: flex;
+      flex-direction: row;
+      margin-left: 550px;
+
+      div{ 
+        margin-left: 50px;;
+      }
+    }
+  
+    .Wings { 
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 100px;
+    }
+
+    .fullBack { 
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+
+
 }

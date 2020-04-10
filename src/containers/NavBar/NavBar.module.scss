@@ -1,12 +1,20 @@
 .NavBar {
   background-color: rgb(10, 8, 64);
   height: 50px;
-  top: 0;
   border: solid red 2px;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vw;
+  margin: 0;
+  // position: fixed;
+
+  img { 
+    height: 100%;
+  }
 
   h1 {
     color: rgb(226, 26, 35);
-    margin: auto;
+    
   }
 }

@@ -1,5 +1,13 @@
 .FrontAndBack {
-  border: solid red 1px;
+  // border: solid red 1px;
   display: flex;
   margin: 5px;
+}
+
+
+.squad {
+  // border: solid blue 4px;
+  right: 0;
+  position: absolute;
+  width: 20vw;;
 }

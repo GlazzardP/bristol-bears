@@ -37,7 +37,7 @@ function App() {
   return (
     <div className={styles.main}>
       <NavBar />
-      <div>
+      <div className={styles.layout}>
         <Pitch currentTeam={currentTeam} />
         <Squad updateTeam={updateTeam} currentTeam={currentTeam} />
       </div>

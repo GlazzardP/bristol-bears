@@ -13,7 +13,7 @@ const Squad = props => {
   // console.log(filteredPlayers);
 
   return (
-    <section>
+    <section className={styles.squad}>
       {filteredPlayers.map(player => {
         // a list of current players names
 
