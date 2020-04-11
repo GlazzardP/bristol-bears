@@ -1,20 +1,35 @@
 .NavBar {
   background-color: rgb(10, 8, 64);
-  height: 50px;
-  border: solid red 2px;
-  text-align: center;
+  height: 10vh;
   display: flex;
-  justify-content: space-evenly;
-  width: 80vw;
+  width: 100vw;
   margin: 0;
-  // position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  flex-direction: row;
+  color: red;
+  text-align: center;
 
-  img { 
+  .mainNav { 
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .squadNav {
+    width: 20vw;
+  } 
+  div {
+    border: solid red 2px;
     height: 100%;
   }
 
-  h1 {
-    color: rgb(226, 26, 35);
-    
-  }
+
+
 }

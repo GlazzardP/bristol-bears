@@ -7,9 +7,9 @@ const players = [
     positionNum: 2,
     attacking: 70,
     defending: 80,
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "John Afoa",
@@ -18,10 +18,10 @@ const players = [
     position: "Prop",
     positionNum: 3,
     attacking: 50,
-    defending: "50",
-    strength: "5",
-    speed: "77",
-    experience: "80"
+    defending: 50,
+    strength: 5,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Joe Joyce",
@@ -29,11 +29,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40600/joe-joyce.jpg?w=540&h=540&mode=crop",
     position: "Lock",
     positionNum: 4,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Steven Luatua",
@@ -41,11 +41,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40617/steven-luatua.jpg?w=540&h=540&mode=crop",
     position: "Flanker",
     positionNum: 6,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Nathan Hughes",
@@ -53,11 +53,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40609/nathan-hughes.jpg?w=540&h=540&mode=crop",
     position: "No. 8",
     positionNum: 8,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Chris Vui",
@@ -65,11 +65,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/42754/chris-vui.jpg?w=540&h=540&mode=crop",
     position: "Lock",
     positionNum: 5,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Dave Attwood",
@@ -77,11 +77,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40586/dave-attwood.jpg?w=540&h=540&mode=crop",
     position: "Lock",
     positionNum: 5,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 75,
+    experience: 80
   },
   {
     playerName: "Will Capon",
@@ -89,11 +89,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40622/will-capon.jpg?w=540&h=540&mode=crop",
     position: "Hooker",
     positionNum: 2,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Max Lahiff",
@@ -101,11 +101,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/41955/max-lahiff.jpg?w=540&h=540&mode=crop",
     position: "Prop",
     positionNum: 3,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Yann Thomas",
@@ -113,11 +113,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40623/yann-thomas.jpg?w=540&h=540&mode=crop",
     position: "Prop",
     positionNum: 1,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 85,
+    speed: 77,
+    experience: 80
   },
   {
     playerName: "Luke Morahan",
@@ -125,11 +125,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40606/luke-morahan.jpg?w=540&h=540&mode=crop",
     position: "Wing",
     positionNum: 14,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 90,
+    strength: 87,
+    speed: 80,
+    experience: 67
   },
   {
     playerName: "Charles Piatau",
@@ -137,11 +137,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40583/charles-piutau.jpg?w=540&h=540&mode=crop",
     position: "Fullback",
     positionNum: 15,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 95,
+    defending: 84,
+    strength: 77,
+    speed: 90,
+    experience: 90
   },
   {
     playerName: "Piers O'Conor",
@@ -149,11 +149,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40613/piers-oconnor.jpg?w=540&h=540&mode=crop",
     position: "Centre",
     positionNum: 13,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 70,
+    strength: 70,
+    speed: 70,
+    experience: 66
   },
   {
     playerName: "Harry Randall",
@@ -161,11 +161,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40590/harry-randall.jpg?w=540&h=540&mode=crop",
     position: "Scrum Half",
     positionNum: 9,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 67,
+    defending: 67,
+    strength: 45,
+    speed: 90,
+    experience: 57
   },
   {
     playerName: "Callum Sheedy",
@@ -173,11 +173,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40582/callum-sheedy.jpg?w=540&h=540&mode=crop",
     position: "Fly Half",
     positionNum: 10,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 70,
+    strength: 70,
+    speed: 70,
+    experience: 70
   },
   {
     playerName: "Andy Uren",
@@ -185,11 +185,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40580/andy-uren.jpg?w=540&h=540&mode=crop",
     position: "Scrum Half",
     positionNum: 9,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 60,
+    strength: 60,
+    speed: 70,
+    experience: 60
   },
   {
     playerName: "Henry Purdy",
@@ -197,11 +197,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/46345/thumbnail_henry-purdy.jpg?w=540&h=540&mode=crop",
     position: "Wing",
     positionNum: 11,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 60,
+    defending: 60,
+    strength: 70,
+    speed: 80,
+    experience: 67
   },
   {
     playerName: "Siale Piatau",
@@ -209,11 +209,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/42757/siale-piutau.jpg?w=540&h=540&mode=crop",
     position: "Centre/Wing",
     positionNum: 13,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 88,
+    strength: 80,
+    speed: 80,
+    experience: 78
   },
   {
     playerName: "Ian Madigan",
@@ -221,11 +221,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40592/ian-madigan.jpg?w=540&h=540&mode=crop",
     position: "Fly Half",
     positionNum: 10,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 67,
+    defending: 70,
+    strength: 80,
+    speed: 80,
+    experience: 87
   },
   {
     playerName: "Alapati Leiua",
@@ -233,11 +233,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/42753/alapati-leiua.jpg?w=540&h=540&mode=crop",
     position: "Wing",
     positionNum: 11,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 70,
+    strength: 76,
+    speed: 87,
+    experience: 78
   },
   {
     playerName: "Tiff Eden",
@@ -245,11 +245,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40618/tiff-eden.jpg?w=540&h=540&mode=crop",
     position: "Fly Half",
     positionNum: 10,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 67,
+    defending: 87,
+    strength: 67,
+    speed: 78,
+    experience: 66
   },
   {
     playerName: "Jake Heenan",
@@ -257,11 +257,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40596/jake-heenan.jpg?w=540&h=540&mode=crop",
     position: "Flanker",
     positionNum: 7,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 50,
+    defending: 90,
+    strength: 80,
+    speed: 76,
+    experience: 50
   },
   {
     playerName: "Kyle Sinckler",
@@ -269,23 +269,23 @@ const players = [
       "https://cdn.rugbypass.com/player-image.php?img=images/players/804/580x580/1771.jpg",
     position: "Prop",
     positionNum: 3,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 77,
+    defending: 88,
+    strength: 88,
+    speed: 88,
+    experience: 93
   },
   {
     playerName: "Semi Radradra",
     playerImg:
       "https://cdn.rugbypass.com/wp/wp-content/uploads/2019/11/Semi-Bears.jpg",
-    position: "Centre/Wing",
+    position: "Centre",
     positionNum: 13,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 99,
+    defending: 88,
+    strength: 88,
+    speed: 93,
+    experience: 93
   },
   {
     playerName: "Jake Armstrong",
@@ -293,11 +293,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40595/jake-armstrong.jpg?w=540&h=540&mode=crop",
     position: "Prop",
     positionNum: 1,
-    attacking: "40",
-    defending: "70",
-    strength: "85",
-    speed: "55",
-    experience: "60"
+    attacking: 56,
+    defending: 56,
+    strength: 74,
+    speed: 46,
+    experience: 65
   },
   {
     playerName: "Joe Batley",
@@ -305,11 +305,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40599/joe-batley.jpg?w=540&h=540&mode=crop",
     position: "Lock",
     positionNum: 5,
-    attacking: "55",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 56,
+    defending: 65,
+    strength: 76,
+    speed: 45,
+    experience: 56
   },
   {
     playerName: "Sam Bedlow",
@@ -317,11 +317,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/41019/thumbnail_sam-bedlow.jpg?w=540&h=540&mode=crop",
     position: "Centre",
     positionNum: 12,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 70,
+    defending: 80,
+    strength: 80,
+    speed: 80,
+    experience: 75
   },
   {
     playerName: "Ryan Edwards",
@@ -329,11 +329,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40614/ryan-edwards.jpg?w=540&h=540&mode=crop",
     position: "Wing",
     positionNum: 11,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 87,
+    defending: 80,
+    strength: 76,
+    speed: 85,
+    experience: 67
   },
   {
     playerName: "Ed Holmes",
@@ -341,11 +341,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40587/ed-holmes.jpg?w=540&h=540&mode=crop",
     position: "Lock",
     positionNum: 4,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 86,
+    defending: 85,
+    strength: 45,
+    speed: 45,
+    experience: 65
   },
   {
     playerName: "Jordan Lay",
@@ -353,11 +353,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/42756/jordan-lay.jpg?w=540&h=540&mode=crop",
     position: "Prop",
     positionNum: 3,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 65,
+    defending: 54,
+    strength: 65,
+    speed: 65,
+    experience: 65
   },
   {
     playerName: "Jake Armstrong",
@@ -365,11 +365,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40597/jake-woolmore.jpg?w=540&h=540&mode=crop",
     position: "Centre/Wing",
     positionNum: 13,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 65,
+    defending: 64,
+    strength: 65,
+    speed: 65,
+    experience: 65
   },
   {
     playerName: "Will Hurrell",
@@ -377,11 +377,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40669/will-hurrell.jpg?w=540&h=540&mode=crop",
     position: "Centre",
     positionNum: 12,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 65,
+    defending: 56,
+    strength: 56,
+    speed: 65,
+    experience: 35
   },
   {
     playerName: "Jake Heenan",
@@ -389,11 +389,11 @@ const players = [
       "https://bristolsport.azureedge.net/media/40596/jake-heenan.jpg?w=540&h=540&mode=crop",
     position: "Flanker",
     positionNum: 7,
-    attacking: "70",
-    defending: "80",
-    strength: "85",
-    speed: "77",
-    experience: "80"
+    attacking: 76,
+    defending: 65,
+    strength: 56,
+    speed: 56,
+    experience: 65
   },
 ];
 

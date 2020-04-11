@@ -34,6 +34,9 @@ function App() {
     addPlayerToTeam(teamAlreadySelected);
   };
 
+
+
+
   return (
     <div className={styles.main}>
       <NavBar />
@@ -41,6 +44,7 @@ function App() {
         <Pitch currentTeam={currentTeam} />
         <Squad updateTeam={updateTeam} currentTeam={currentTeam} />
       </div>
+
     </div>
   );
 }
