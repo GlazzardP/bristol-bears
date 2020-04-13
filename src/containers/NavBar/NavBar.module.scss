@@ -16,6 +16,7 @@
     display: flex;
     width: 80vw;
     justify-content: space-evenly;
+    height: 100%;
 
     img {
       height: 100%;
@@ -24,6 +25,8 @@
 
   .squadNav {
     width: 20vw;
+    height: 100%;
+
   } 
   div {
     border: solid red 2px;

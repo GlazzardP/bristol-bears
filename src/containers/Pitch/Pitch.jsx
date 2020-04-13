@@ -1,26 +1,76 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Pitch.module.scss";
-// import PlayerPosition from "../../components/PlayerPosition";
+import { firestore } from "../../firebase.js"
 
 const Pitch = (props) => {
   const { currentTeam } = props;
 
   let attackArray = currentTeam.map((playerObj) => playerObj.attacking);
-
+  // const currentTeamArray = currentTeam.filter((playerObj) => { 
+  //   const attackArray = playerObj.attacking > 0;
+  //   return attackArray
+  // })
   let attackSum = attackArray.reduce((accumulator, currentValue) => { 
     return accumulator + currentValue;
   }, 0);
-
+  console.log(attackSum)
   const teamAttackPercentageJsx = Math.floor(attackSum / currentTeam.length);
-  console.log(teamAttackPercentageJsx)
 
-  let scoreArray = currentTeam.map((playerObj) => playerObj.ALL)
+// Defence info
 
-  let scoreSum = scoreArray.reduce((accumulator, currentValue) => { 
+  let defenceArray = currentTeam.map((playerObj) => playerObj.defending)
+
+  let defenceSum = defenceArray.reduce((accumulator, currentValue) => { 
     return accumulator + currentValue;
   }, 0);
 
-  
+  const teamDefenceJsx = Math.floor(defenceSum / currentTeam.length);
+
+  // strength info
+
+  let strengthArray = currentTeam.map((playerObj) => playerObj.strength)
+
+  let strengthSum = strengthArray.reduce((accumulator, currentValue) => { 
+    return accumulator + currentValue;
+  }, 0);
+
+  const teamstrengthJsx = Math.floor(strengthSum / currentTeam.length);
+
+  // speed info
+  let speedArray = currentTeam.map((playerObj) => playerObj.speed)
+  let speedSum = speedArray.reduce((accumulator, currentValue) => { 
+    return accumulator + currentValue;
+  }, 0);
+
+  const teamspeedJsx = Math.floor(speedSum / currentTeam.length);
+
+  // experience info
+  let experienceArray = currentTeam.map((playerObj) => playerObj.experience)
+  let experienceSum = experienceArray.reduce((accumulator, currentValue) => { 
+    return accumulator + currentValue;
+  }, 0);
+
+  const teamexperienceJsx = Math.floor(experienceSum / currentTeam.length);
+
+  const teamScoreJsx = (teamAttackPercentageJsx + teamDefenceJsx + teamstrengthJsx + teamspeedJsx + teamexperienceJsx) / 5;
+
+
+
+  // DB - CRUD 
+const addToDb = () => {
+  // if (user) { // Dont yet require login
+  firestore 
+    .collection("team")
+    .doc("users")
+    .set([currentTeam
+    ])
+    // .then(() => {
+    // })
+    .catch(err => {
+      console.log(err);
+    });
+} 
+
 
   return (
     <>
@@ -38,21 +88,21 @@ const Pitch = (props) => {
           {currentTeam.slice(5, 6).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
 
           {currentTeam.slice(3, 5).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
 
           {currentTeam.slice(6, 7).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
         </section>
@@ -61,7 +111,7 @@ const Pitch = (props) => {
           {currentTeam.slice(7, 8).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
         </section>
@@ -70,7 +120,7 @@ const Pitch = (props) => {
           {currentTeam.slice(8, 9).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
         </section>
@@ -79,7 +129,7 @@ const Pitch = (props) => {
           {currentTeam.slice(9, 10).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
         </section>
@@ -88,7 +138,7 @@ const Pitch = (props) => {
           {currentTeam.slice(11, 13).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
         </section>
@@ -97,14 +147,14 @@ const Pitch = (props) => {
           {currentTeam.slice(10, 11).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
 
           {currentTeam.slice(13, 14).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
         </section>
@@ -113,21 +163,31 @@ const Pitch = (props) => {
           {currentTeam.slice(14, 15).map((playerObj) => (
             <div className={styles.ShirtPlayer}>
               <p>{playerObj.playerName}</p>
-              <p>{playerObj.PlayerPosition}</p>
+              <p>{playerObj.PlayerNum}</p>
             </div>
           ))}
         </section>
       </section>
       <div className={styles.feedback}>
-        <p>Attack: {teamAttackPercentageJsx}%</p>
-        <p>Defence: {teamAttackPercentageJsx}%</p>
-        <p>Strength: {teamAttackPercentageJsx}%</p>
-        <p>Speed: {teamAttackPercentageJsx}%</p>
-        <p>Experience: {teamAttackPercentageJsx}%</p>
+        <p>Attack: {teamAttackPercentageJsx} %</p>
+        <p>Defence: {teamDefenceJsx} %</p>
+        <p>Strength: {teamstrengthJsx} %</p>
+        <p>Speed: {teamspeedJsx} %</p>
+        <p>Experience: {teamexperienceJsx} %</p>
+        <p>Overall: {teamScoreJsx} %</p>
 
-      </div>   
+        <button id="submitTeam" onClick={addToDb} >Submit Team</button>
+      </div>
+{/* 
+      <div id="myModal" class="modal">
+          <div className={styles.modalContent}>
+            <span className={styles.close}></span>
+            <p>Some text in the Modal..</p>
+          </div>
+
+        </div> */}
    
-      </>
+  </>
   );
 };
 

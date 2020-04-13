@@ -36,7 +36,6 @@ function App() {
 
 
 
-
   return (
     <div className={styles.main}>
       <NavBar />

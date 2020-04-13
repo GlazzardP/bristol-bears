@@ -60,11 +60,19 @@
 }
 
 .feedback {
-  background-color: navy;
+  background-color: rgb(10, 8, 64);
   height: 10vh;
   width: 80vw;
   position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
+
+  p, button{ 
+  color: red;
+  border: solid red 2px;
+  height: fit-content;
+  margin: auto 0;
+  padding: 5px;
+  }
 }
