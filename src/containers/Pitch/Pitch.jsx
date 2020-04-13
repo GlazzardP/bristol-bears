@@ -5,54 +5,68 @@ import { firestore } from "../../firebase.js"
 const Pitch = (props) => {
   const { currentTeam } = props;
 
-  let attackArray = currentTeam.map((playerObj) => playerObj.attacking);
-  // const currentTeamArray = currentTeam.filter((playerObj) => { 
-  //   const attackArray = playerObj.attacking > 0;
-  //   return attackArray
-  // })
-  let attackSum = attackArray.reduce((accumulator, currentValue) => { 
-    return accumulator + currentValue;
-  }, 0);
-  console.log(attackSum)
-  const teamAttackPercentageJsx = Math.floor(attackSum / currentTeam.length);
+  const getSumJsx = (type) => { 
+    const currentTeamArray = currentTeam.filter((playerObj) => { 
+      return playerObj.hasOwnProperty(type)
+    })
+    let attackArray = currentTeamArray.map((playerObj) => playerObj[type]);
 
-// Defence info
+    let attackSum = attackArray.reduce((accumulator, currentValue) => { 
+      return accumulator + currentValue;
+    }, 0);
+    return Math.floor(attackSum / currentTeamArray.length) || 0;
+  }
 
-  let defenceArray = currentTeam.map((playerObj) => playerObj.defending)
 
-  let defenceSum = defenceArray.reduce((accumulator, currentValue) => { 
-    return accumulator + currentValue;
-  }, 0);
 
-  const teamDefenceJsx = Math.floor(defenceSum / currentTeam.length);
+//   let attackArray = currentTeam.map((playerObj) => playerObj.attacking);
+//   // const currentTeamArray = currentTeam.filter((playerObj) => { 
+//   //   const attackArray = playerObj.attacking > 0;
+//   //   return attackArray
+//   // })
+//   let attackSum = attackArray.reduce((accumulator, currentValue) => { 
+//     return accumulator + currentValue;
+//   }, 0);
+//   console.log(attackSum)
+//   const teamAttackPercentageJsx = Math.floor(attackSum / currentTeam.length);
 
-  // strength info
+// // Defence info
 
-  let strengthArray = currentTeam.map((playerObj) => playerObj.strength)
+//   let defenceArray = currentTeam.map((playerObj) => playerObj.defending)
 
-  let strengthSum = strengthArray.reduce((accumulator, currentValue) => { 
-    return accumulator + currentValue;
-  }, 0);
+//   let defenceSum = defenceArray.reduce((accumulator, currentValue) => { 
+//     return accumulator + currentValue;
+//   }, 0);
 
-  const teamstrengthJsx = Math.floor(strengthSum / currentTeam.length);
+//   const teamDefenceJsx = Math.floor(defenceSum / currentTeam.length);
 
-  // speed info
-  let speedArray = currentTeam.map((playerObj) => playerObj.speed)
-  let speedSum = speedArray.reduce((accumulator, currentValue) => { 
-    return accumulator + currentValue;
-  }, 0);
+//   // strength info
 
-  const teamspeedJsx = Math.floor(speedSum / currentTeam.length);
+//   let strengthArray = currentTeam.map((playerObj) => playerObj.strength)
 
-  // experience info
-  let experienceArray = currentTeam.map((playerObj) => playerObj.experience)
-  let experienceSum = experienceArray.reduce((accumulator, currentValue) => { 
-    return accumulator + currentValue;
-  }, 0);
+//   let strengthSum = strengthArray.reduce((accumulator, currentValue) => { 
+//     return accumulator + currentValue;
+//   }, 0);
 
-  const teamexperienceJsx = Math.floor(experienceSum / currentTeam.length);
+//   const teamstrengthJsx = Math.floor(strengthSum / currentTeam.length);
 
-  const teamScoreJsx = (teamAttackPercentageJsx + teamDefenceJsx + teamstrengthJsx + teamspeedJsx + teamexperienceJsx) / 5;
+//   // speed info
+//   let speedArray = currentTeam.map((playerObj) => playerObj.speed)
+//   let speedSum = speedArray.reduce((accumulator, currentValue) => { 
+//     return accumulator + currentValue;
+//   }, 0);
+
+//   const teamspeedJsx = Math.floor(speedSum / currentTeam.length);
+
+//   // experience info
+//   let experienceArray = currentTeam.map((playerObj) => playerObj.experience)
+//   let experienceSum = experienceArray.reduce((accumulator, currentValue) => { 
+//     return accumulator + currentValue;
+//   }, 0);
+
+//   const teamexperienceJsx = Math.floor(experienceSum / currentTeam.length);
+
+  const teamScoreJsx = (getSumJsx("attacking") + getSumJsx("defending") + getSumJsx("speed") + getSumJsx("strength") + getSumJsx("experience")) / 5;
 
 
 
@@ -62,8 +76,7 @@ const addToDb = () => {
   firestore 
     .collection("team")
     .doc("users")
-    .set([currentTeam
-    ])
+    .set({currentTeam})
     // .then(() => {
     // })
     .catch(err => {
@@ -169,12 +182,16 @@ const addToDb = () => {
         </section>
       </section>
       <div className={styles.feedback}>
-        <p>Attack: {teamAttackPercentageJsx} %</p>
-        <p>Defence: {teamDefenceJsx} %</p>
-        <p>Strength: {teamstrengthJsx} %</p>
-        <p>Speed: {teamspeedJsx} %</p>
-        <p>Experience: {teamexperienceJsx} %</p>
-        <p>Overall: {teamScoreJsx} %</p>
+        <p>Attack: {getSumJsx("attacking")} %</p>
+        <p>Defence: {getSumJsx("defending")} %</p>
+        <p>Strength: {getSumJsx("strength")} %</p>
+        <p>Strength: {getSumJsx("speed")} %</p>
+        <p>Strength: {getSumJsx("experience")} %</p>
+        <p>Overall: {teamScoreJsx} %</p> */}
+
+
+
+
 
         <button id="submitTeam" onClick={addToDb} >Submit Team</button>
       </div>
