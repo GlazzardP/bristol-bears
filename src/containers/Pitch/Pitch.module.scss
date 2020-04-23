@@ -5,58 +5,55 @@
   background-size: cover;
   width: 80vw;
   height: 80vh;
-  border:  solid black 1px;
+  border: solid black 1px;
   // background-color: green;
   position: fixed;
   display: flex;
   justify-content: center;
   margin-top: 10vh;
 
-  > section { 
+  > section {
     // border: solid black 2px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin: 0 10px;
 
-    > div { 
+    > div {
       height: 70px;
       width: 70px;
       margin: 10px 0;
     }
-
   }
-  .frontRow { 
+  .frontRow {
     margin-bottom: 70px;
   }
 
-  .secondRow { 
+  .secondRow {
     margin-bottom: 20px;
   }
-  .noEight { 
+  .noEight {
     margin-bottom: 160px;
   }
 
-  .scrumHalf { 
+  .scrumHalf {
     margin-bottom: 230px;
   }
 
-  .flyHalf, .fullBack { 
-    justify-content: center;  
+  .flyHalf,
+  .fullBack {
+    justify-content: center;
   }
 
-  .centres { 
+  .centres {
     justify-content: flex-start;
-    margin-top: 140px;;  
+    margin-top: 140px;
   }
 
-  .wings { 
+  .wings {
     justify-content: space-between;
-    margin: 50px 0 50px 0;  
+    margin: 50px 0 50px 0;
   }
-
-
-
 }
 
 .feedback {
@@ -68,11 +65,16 @@
   display: flex;
   justify-content: space-evenly;
 
-  p, button{ 
-  color: red;
-  border: solid red 2px;
-  height: fit-content;
-  margin: auto 0;
-  padding: 5px;
+  p,
+  button {
+    color: red;
+    border: solid red 2px;
+    height: fit-content;
+    margin: auto 0;
+    padding: 5px;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }

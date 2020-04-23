@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./PlayerCardFront.module.scss";
 import PlayerName from "../PlayerName";
 import PlayerPosition from "../PlayerPosition";
@@ -6,8 +6,7 @@ import PlayerImg from "../PlayerImg";
 // import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 // import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
-const PlayerCardFront = props => {
-  const [notSelected, toggleSelectionToTeam] = useState();
+const PlayerCardFront = (props) => {
   const { playerObj, updateTeam } = props;
   // console.log(playerObj);
 
@@ -23,8 +22,6 @@ const PlayerCardFront = props => {
           position={playerObj.position}
           positionNumber={playerObj.positionNum}
         />
-        {/* <FontAwesomeIcon icon={faUserPlus} /> */}
-        {/* <FontAwesomeIcon icon={faCheckCircle} /> */}
         <p onClick={() => updateTeam(playerObj)}>Select</p>
       </section>
       <div></div>

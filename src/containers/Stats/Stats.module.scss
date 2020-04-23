@@ -1,0 +1,19 @@
+.playerStats {
+  border: solid pink 2px;
+  background-color: indigo;
+  color: white;
+  // position: absolute;
+  margin-top: 10vh;
+  // z-index: 7;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90v;
+}
+
+.playerStat {
+  display: flex;
+  flex-direction: row;
+  border: solid black 2px;
+  margin: 20px;
+  padding: 20px;
+}

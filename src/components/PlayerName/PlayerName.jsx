@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./PlayerName.module.scss";
+// import styles from "./PlayerName.module.scss";
 
-const PlayerName = props => {
+const PlayerName = (props) => {
   const { name } = props;
   return (
     <>
