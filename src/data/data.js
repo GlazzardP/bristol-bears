@@ -9,7 +9,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "John Afoa",
@@ -21,7 +21,7 @@ const players = [
     defending: 50,
     strength: 5,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Joe Joyce",
@@ -33,7 +33,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Steven Luatua",
@@ -45,7 +45,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Nathan Hughes",
@@ -57,7 +57,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Chris Vui",
@@ -69,7 +69,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Dave Attwood",
@@ -81,7 +81,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 75,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Will Capon",
@@ -93,7 +93,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Max Lahiff",
@@ -105,7 +105,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Yann Thomas",
@@ -117,7 +117,7 @@ const players = [
     defending: 80,
     strength: 85,
     speed: 77,
-    experience: 80
+    experience: 80,
   },
   {
     playerName: "Luke Morahan",
@@ -129,7 +129,7 @@ const players = [
     defending: 90,
     strength: 87,
     speed: 80,
-    experience: 67
+    experience: 67,
   },
   {
     playerName: "Charles Piatau",
@@ -141,7 +141,7 @@ const players = [
     defending: 84,
     strength: 77,
     speed: 90,
-    experience: 90
+    experience: 90,
   },
   {
     playerName: "Piers O'Conor",
@@ -153,7 +153,7 @@ const players = [
     defending: 70,
     strength: 70,
     speed: 70,
-    experience: 66
+    experience: 66,
   },
   {
     playerName: "Harry Randall",
@@ -165,7 +165,7 @@ const players = [
     defending: 67,
     strength: 45,
     speed: 90,
-    experience: 57
+    experience: 57,
   },
   {
     playerName: "Callum Sheedy",
@@ -177,7 +177,7 @@ const players = [
     defending: 70,
     strength: 70,
     speed: 70,
-    experience: 70
+    experience: 70,
   },
   {
     playerName: "Andy Uren",
@@ -189,7 +189,7 @@ const players = [
     defending: 60,
     strength: 60,
     speed: 70,
-    experience: 60
+    experience: 60,
   },
   {
     playerName: "Henry Purdy",
@@ -201,7 +201,7 @@ const players = [
     defending: 60,
     strength: 70,
     speed: 80,
-    experience: 67
+    experience: 67,
   },
   {
     playerName: "Siale Piatau",
@@ -213,7 +213,7 @@ const players = [
     defending: 88,
     strength: 80,
     speed: 80,
-    experience: 78
+    experience: 78,
   },
   {
     playerName: "Ian Madigan",
@@ -225,7 +225,7 @@ const players = [
     defending: 70,
     strength: 80,
     speed: 80,
-    experience: 87
+    experience: 87,
   },
   {
     playerName: "Alapati Leiua",
@@ -237,7 +237,7 @@ const players = [
     defending: 70,
     strength: 76,
     speed: 87,
-    experience: 78
+    experience: 78,
   },
   {
     playerName: "Tiff Eden",
@@ -249,7 +249,7 @@ const players = [
     defending: 87,
     strength: 67,
     speed: 78,
-    experience: 66
+    experience: 66,
   },
   {
     playerName: "Jake Heenan",
@@ -261,7 +261,7 @@ const players = [
     defending: 90,
     strength: 80,
     speed: 76,
-    experience: 50
+    experience: 50,
   },
   {
     playerName: "Kyle Sinckler",
@@ -273,7 +273,7 @@ const players = [
     defending: 88,
     strength: 88,
     speed: 88,
-    experience: 93
+    experience: 93,
   },
   {
     playerName: "Semi Radradra",
@@ -285,7 +285,7 @@ const players = [
     defending: 88,
     strength: 88,
     speed: 93,
-    experience: 93
+    experience: 93,
   },
   {
     playerName: "Jake Armstrong",
@@ -297,7 +297,7 @@ const players = [
     defending: 56,
     strength: 74,
     speed: 46,
-    experience: 65
+    experience: 65,
   },
   {
     playerName: "Joe Batley",
@@ -309,7 +309,7 @@ const players = [
     defending: 65,
     strength: 76,
     speed: 45,
-    experience: 56
+    experience: 56,
   },
   {
     playerName: "Sam Bedlow",
@@ -321,7 +321,7 @@ const players = [
     defending: 80,
     strength: 80,
     speed: 80,
-    experience: 75
+    experience: 75,
   },
   {
     playerName: "Ryan Edwards",
@@ -333,7 +333,7 @@ const players = [
     defending: 80,
     strength: 76,
     speed: 85,
-    experience: 67
+    experience: 67,
   },
   {
     playerName: "Ed Holmes",
@@ -345,7 +345,7 @@ const players = [
     defending: 85,
     strength: 45,
     speed: 45,
-    experience: 65
+    experience: 65,
   },
   {
     playerName: "Jordan Lay",
@@ -357,19 +357,19 @@ const players = [
     defending: 54,
     strength: 65,
     speed: 65,
-    experience: 65
+    experience: 65,
   },
   {
-    playerName: "Jake Armstrong",
+    playerName: "Jake Woolmore",
     playerImg:
       "https://bristolsport.azureedge.net/media/40597/jake-woolmore.jpg?w=540&h=540&mode=crop",
-    position: "Centre/Wing",
-    positionNum: 13,
+    position: "Prop",
+    positionNum: 1,
     attacking: 65,
     defending: 64,
     strength: 65,
     speed: 65,
-    experience: 65
+    experience: 65,
   },
   {
     playerName: "Will Hurrell",
@@ -381,7 +381,7 @@ const players = [
     defending: 56,
     strength: 56,
     speed: 65,
-    experience: 35
+    experience: 35,
   },
   {
     playerName: "Jake Heenan",
@@ -393,7 +393,7 @@ const players = [
     defending: 65,
     strength: 56,
     speed: 56,
-    experience: 65
+    experience: 65,
   },
 ];
 

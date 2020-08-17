@@ -39,6 +39,14 @@
     border-bottom: solid red 2px;
     width: 20vw;
     height: 100%;
+
+    .playerOptionSelect {
+      select {
+        background-color: pink;
+        width: 20vw;
+        margin: auto;
+      }
+    }
   }
 
   .authButtons {
@@ -50,5 +58,16 @@
       border: solid red 1px;
       padding: 5px 10px;
     }
+  }
+}
+
+.playerOptionSelect {
+  z-index: 11;
+  color: white;
+  background-color: red;
+
+  option {
+    height: 40px;
+    width: 80px;
   }
 }

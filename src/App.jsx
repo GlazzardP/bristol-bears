@@ -11,9 +11,11 @@ import Stats from "./containers/Stats";
 import Modal from "./components/Modal";
 
 function App() {
+  // const { positionFilter } = props;
   const [pitchPage, togglePitchPage] = useState(true);
   const [confModal, toggleConfModal] = useState(false);
   const [user, setUser] = useState(null);
+  const [positionFilter, updateFilterPosition] = useState("Prop");
 
   const [currentTeam, addPlayerToTeam] = useState([
     {},
@@ -74,7 +76,13 @@ function App() {
 
   return (
     <div className={styles.main}>
-      <NavBar signIn={signIn} signOut={signOut} user={user} />
+      <NavBar
+        signIn={signIn}
+        signOut={signOut}
+        user={user}
+        updateFilterPosition={updateFilterPosition}
+        positionFilter={positionFilter}
+      />
       {confModal ? (
         <Modal
           toggleConfModal={toggleConfModal}
@@ -89,7 +97,14 @@ function App() {
             user={user}
             toggleConfModal={toggleConfModal}
           />
-          <Squad updateTeam={updateTeam} currentTeam={currentTeam} />
+          <Squad
+            updateTeam={updateTeam}
+            currentTeam={currentTeam}
+            updateFilterPosition={updateFilterPosition}
+            positionFilter={positionFilter}
+
+            // positionFilter={positionFilter}
+          />
         </div>
       ) : (
         <Stats />

@@ -4,13 +4,17 @@
   margin: 5px;
 }
 
-
 .squad {
-  // border: solid blue 4px;
+  border: solid yellow 2px;
   right: 0;
   position: absolute;
-  width: 20vw;;
+  width: 20vw;
   top: 10vh;
-  border-left: solid red 2px;
+  // border-left: solid red 2px;
 
+  select {
+    background-color: pink;
+    width: 20vw;
+    margin: auto;
+  }
 }
