@@ -16,7 +16,6 @@ function App() {
   const [confModal, toggleConfModal] = useState(false);
   const [user, setUser] = useState(null);
   const [positionFilter, updateFilterPosition] = useState("Prop");
-
   const [currentTeam, addPlayerToTeam] = useState([
     {},
     {},

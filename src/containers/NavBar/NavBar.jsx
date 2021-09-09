@@ -5,9 +5,7 @@ import image from "../../data/1200px-Bristol_Bears_logo.svg (1).png";
 
 const NavBar = (props) => {
   const { signIn, signOut, user, positionFilter, updateFilterPosition } = props;
-  // const [positionFilter, updateFilterPosition] = useState("");
 
-  // const [positionFilter, updateFilterPosition] = useState("");
 
   const signInOutJsx = user ? (
     <div className={styles.authButtons}>
